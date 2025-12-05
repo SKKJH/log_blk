@@ -1,0 +1,9 @@
+[+] Waiting for log file: ./tmp/filebench.txt
+[+] Log file found
+[2025-12-05 17:49:42] Monitoring ./tmp/filebench.txt for 'Running' / 'Shutting down'...
+[+] 'Running' detected
+[2025-12-05 17:51:56] Resetting kernel ring buffer and starting dmesg capture -> ./logs/dmesg_delaytrim.txt
+[2025-12-05 17:51:56] ▶ starting blktrace on /dev/nvme1n1
+[2025-12-05 17:51:56] Executing one-time NVMe read
+[+] 'Shutting down' detected
+[2025-12-05 17:56:56] Stopping dmesg capture (pid=2566)

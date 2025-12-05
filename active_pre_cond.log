@@ -1,0 +1,30 @@
+[+] Switching to /home/kjh/linux-hwe-5.4-5.4.0/fs/f2fs
+[+] Formatting /dev/nvme1n1 with f2fs
+
+	F2FS-tools: mkfs.f2fs Ver: 1.11.0 (2018-07-10)
+
+Info: Disable heap-based policy
+Info: Debug level = 0
+Info: Add new hot file extension list
+Info: Label = 
+Info: Trim is enabled
+Info: Segments per section = 1
+Info: Sections per zone = 1
+Info: sector size = 4096
+Info: total sectors = 7864320 (30720 MB)
+Info: zone aligned segment0 blkaddr: 512
+Info: format version with
+  "Linux version 5.4.0-150-generic (buildd@bos03-amd64-012) (gcc version 7.5.0 (Ubuntu 7.5.0-3ubuntu1~18.04)) #167~18.04.1-Ubuntu SMP Wed May 24 00:51:42 UTC 2023"
+Info: [/dev/nvme1n1] Discarding device
+Info: This device doesn't support BLKSECDISCARD
+Info: Discarded 30720 MB
+Info: Overprovision ratio = 1.150%
+Info: Overprovision segments = 354 (GC reserved = 181)
+Info: format successful
+[+] Creating mount point /media/nvme (if absent)
+[+] Mounting /dev/nvme1n1 to /media/nvme
+[+] Disabling address space randomization
+[+] Returned to original directory: /home/kjh/test_sh/blktrace
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/nvme1n1     30G  913M   30G   3% /media/nvme
+[+] Reading NVMe info (before Filebench)
