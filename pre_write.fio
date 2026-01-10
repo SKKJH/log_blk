@@ -1,0 +1,13 @@
+[global]
+name=fio-rand-write
+filename=/dev/nvme1n1
+rw=randwrite
+bs=16K
+direct=1
+offset=1G
+ioengine=libaio
+iodepth=64
+
+[write]
+size=25G
+io_size=70%

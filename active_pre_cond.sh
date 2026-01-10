@@ -4,7 +4,7 @@ set -euo pipefail
 ############################
 # 0. 기본 설정
 ############################
-JOB_FIO="/home/kjh/test_sh/pre_write.fio"
+JOB_FIO="pre_write.fio"
 NVME_DEV="/dev/nvme1n1"
 MNT_DIR="/media/nvme"
 KERNEL_F2FS_DIR="/home/kjh/linux-hwe-5.4-5.4.0/fs/f2fs"
@@ -28,6 +28,7 @@ echo "[+] Creating mount point $MNT_DIR (if absent)"
 sudo mkdir -p "$MNT_DIR"
 
 echo "[+] Mounting $NVME_DEV to $MNT_DIR"
+#sudo mount -t f2fs "$NVME_DEV" "$MNT_DIR" || { echo "mount failed"; exit 1; }
 sudo mount -t f2fs -o mode=lfs "$NVME_DEV" "$MNT_DIR" || { echo "mount failed"; exit 1; }
 
 echo "[+] Disabling address space randomization"

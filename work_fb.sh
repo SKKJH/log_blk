@@ -2,7 +2,7 @@
 set -euo pipefail
 
 MNT_DIR="/media/nvme"
-FILEBENCH_SCRIPT="/home/kjh/test_sh/fileserver.f"
+FILEBENCH_SCRIPT="fileserver.f"
 FB_RESULT_DIR="./tmp"
 FB_RESULT_FILE="$FB_RESULT_DIR/filebench.txt"
 NVME_DEV="/dev/nvme1n1"
