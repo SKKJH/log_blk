@@ -1,2 +1,3 @@
 grep " D " NO_CACHE_OPT_BLK_TRACE > no_cache_opt_dispatch.txt
 blkparse -i blktrace -o blktrace.parsed
+echo "nameserver 8.8.8.8" >> /etc/resolv.conf
