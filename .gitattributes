@@ -1,4 +1,4 @@
+write_selec_log.txt filter=lfs diff=lfs merge=lfs -text
 selec_log.txt filter=lfs diff=lfs merge=lfs -text
 all_log.txt filter=lfs diff=lfs merge=lfs -text
 write_all_log.txt filter=lfs diff=lfs merge=lfs -text
-write_selec_log.txt filter=lfs diff=lfs merge=lfs -text
